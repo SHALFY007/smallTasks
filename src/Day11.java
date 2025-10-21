@@ -1,8 +1,9 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 
-public class Day10 {
+public class Day11 {
     public static void main(String[] args) {
-        Goods goods = new Goods();
+        GoodsLinked goods = new GoodsLinked();
         goods.addNewGood("Good-1");
         goods.addNewGood("Good-2");
         goods.addNewGood("Good-3");
@@ -13,10 +14,10 @@ public class Day10 {
 
 }
 
-class Goods {
-    ArrayList<String> goods;
-    public Goods() {
-        this.goods = new ArrayList<String>();
+class GoodsLinked {
+    LinkedList<String> goods;
+    public GoodsLinked() {
+        this.goods = new LinkedList<String>();
     }
     void addNewGood(String good) {
         goods.add(good);
